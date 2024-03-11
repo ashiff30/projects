@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    margin-top: 15px;
+}
+
+li{
+    display: inline;
+    padding: 5px;
+    color: grey;
+    cursor: pointer;
+}
+
+li:hover{
+    color: white;
+}
+
+.content{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 20px;
+}
+
+.box{
+    border: 2px solid black;
+    display: inline-block;
+    width: 220px;
+    cursor: pointer;
+}
+
+.box:hover{
+    background-color: black;
+    color: white;
+}
+
+.box button{
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 2px;
+    font-size: 20px;
+    margin-top: 10px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.box button:hover{
+    background-color: white;
+    color: black;
+}
+.about{
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.about h1{
+    margin-bottom: 20px;
+}
+
+.contact{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.contact h1{
+    margin-bottom: 20px;
+}
+
+.contact input{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.contact #age{
+    margin-left: 15px;
+}
+
+.contact label{
+    font-size: 20px
+}
+
+.contact button{
+    background-color: yellow;
+    width: 30%;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: medium;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.contact button:hover{
+    background-color: whitesmoke;
+}
+
+@media screen and (min-width:400px) {
+    .header, .contact{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:950px) {
+    .content{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    .content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .header, .contact{
+        width: 150%;
+    }
+
+    .content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 60%;
+    }
+
+    .about{
+        margin-left: 15%;
+        width:130%;
+    }
+
+}
+
+
+
